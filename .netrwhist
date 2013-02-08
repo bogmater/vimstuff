@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/dome/haskell'
+let g:netrw_dirhist_2='/home/dome/haskell/puh'
+let g:netrw_dirhist_3='/home/dome/haskell/puh/dz'
