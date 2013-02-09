@@ -92,6 +92,9 @@ noremap <leader>p "+p
 " add a $ character to end of a change 
 set cpoptions+=$
 
+" nerdtree toggle
+map F1 :NERDTreeToggle<CR>
+
 " ctags binding
 nnoremap <f12> :!ctags -R<cr>
 
