@@ -37,7 +37,7 @@ filetype plugin on
 filetype plugin indent on
 
 " colorscheme
-set background=dark
+set background=light
 colorscheme solarized
 
 " virtualedit
