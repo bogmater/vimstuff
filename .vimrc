@@ -98,6 +98,9 @@ map F1 :NERDTreeToggle<CR>
 " ctags binding
 nnoremap <f12> :!ctags -R<cr>
 
+" xptemplate bindings
+let g:xptemplate_key = '<Tab>'
+let g:xptemplate_brace_complete = 1
 
 " status line configuration
 set ls=2 " always show status line
