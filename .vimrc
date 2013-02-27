@@ -48,7 +48,7 @@ set virtualedit=all
 
 " gui options
 set guioptions=ac
-set guifont=Droid\ Sans\ Mono\ 11
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 11
 
 " hide the mouse while typing
 set mousehide
@@ -104,21 +104,5 @@ let g:xptemplate_brace_complete = 1
 
 " status line configuration
 set ls=2 " always show status line
-if has('statusline')
-	function SetStatusLineStyle()
-		if &stl == '' || &stl =~ 'synID'
-         		let &stl="%f %y%([%R%M]%)%{'!'[&ff=='".&ff."']}%{'$'[!&list]}%{'~'[&pm=='']}%=buff:#%n line:%l/%L col:%c%V "
-		else
-         		let &stl="%f %y%([%R%M]%)%{'!'[&ff=='".&ff."']}%{'$'[!&list]} (%{synIDattr(synID(line('.'),col('.'),0),'name')})%=buff:#%n line:%l/%L col%c%V "
-		endif
-	endfunc
-	nmap _ds :call SetStatusLineStyle()<CR>
-	call SetStatusLineStyle()
-	" window title
-	if has('title')
-		set titlestring=%t%(\ [%R%M]%)
-	endif
-endif
-" end status line configuration
 
 let g:haddock_docdir = "/usr/share/doc/ghc-haddock/"
