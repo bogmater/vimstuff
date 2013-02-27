@@ -48,7 +48,7 @@ set virtualedit=all
 
 " gui options
 set guioptions=ac
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 11
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 13
 
 " hide the mouse while typing
 set mousehide
@@ -105,4 +105,6 @@ let g:xptemplate_brace_complete = 1
 " status line configuration
 set ls=2 " always show status line
 
-let g:haddock_docdir = "/usr/share/doc/ghc-haddock/"
+" powerline settings
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set noshowmode
