@@ -101,6 +101,7 @@ nnoremap <f12> :!ctags -R<cr>
 " xptemplate bindings
 let g:xptemplate_key = '<Tab>'
 let g:xptemplate_brace_complete = 1
+let g:xptemplate_vars = "SParg="
 
 " status line configuration
 set ls=2 " always show status line
