@@ -13,6 +13,9 @@ set hidden
 " enable line number
 set nu
 
+" visual 80 column
+set colorcolumn=80
+
 " show line and column markers
 " set cursorline
 " set cursorcolumn
@@ -43,12 +46,17 @@ colorscheme solarized
 " virtualedit
 set virtualedit=all
 
+" tab stuff
+set expandtab
+set shiftwidth=2
+set tabstop=2
+
 " scrolling 
-" set scrolloff=8
+set scrolloff=8
 
 " gui options
 set guioptions=ac
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 13
+set guifont=Envy\ Code\ R\ 14
 
 " hide the mouse while typing
 set mousehide
@@ -93,7 +101,7 @@ noremap <leader>p "+p
 set cpoptions+=$
 
 " nerdtree toggle
-map F1 :NERDTreeToggle<CR>
+map <F1> :NERDTreeToggle<CR>
 
 " ctags binding
 nnoremap <f12> :!ctags -R<cr>
