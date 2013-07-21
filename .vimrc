@@ -1,5 +1,8 @@
 call pathogen#infect()
 
+" set default directory
+:cd ~/Dropbox/
+
 " break compatibility with vi
 set nocompatible
 
