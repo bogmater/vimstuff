@@ -51,12 +51,12 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 
-" scrolling 
+" scrolling
 set scrolloff=8
 
 " gui options
 set guioptions=ac
-set guifont=Envy\ Code\ R\ 14
+set guifont=PragmataPro\ for\ Powerline\ 14
 
 " hide the mouse while typing
 set mousehide
@@ -97,7 +97,7 @@ noremap <leader>y "+y
 noremap <leader>Y "+Y
 noremap <leader>p "+p
 
-" add a $ character to end of a change 
+" add a $ character to end of a change
 set cpoptions+=$
 
 " nerdtree toggle
@@ -107,9 +107,9 @@ map <F1> :NERDTreeToggle<CR>
 nnoremap <f12> :!ctags -R<cr>
 
 " xptemplate bindings
-let g:xptemplate_key = '<Tab>'
-let g:xptemplate_brace_complete = 1
-let g:xptemplate_vars = "SParg="
+" let g:xptemplate_key = '<Tab>'
+" let g:xptemplate_brace_complete = 1
+" let g:xptemplate_vars = "SParg="
 
 " status line configuration
 set ls=2 " always show status line
