@@ -1,7 +1,7 @@
 call pathogen#infect()
 
 " set default directory
-:cd ~/Dropbox/
+" :cd ~/Dropbox/
 
 " break compatibility with vi
 set nocompatible
@@ -16,8 +16,8 @@ set hidden
 " enable line number
 set nu
 
-" visual 80 column
-set colorcolumn=80
+" visual column
+" set colorcolumn=120
 
 " show line and column markers
 " set cursorline
@@ -51,15 +51,15 @@ set virtualedit=all
 
 " tab stuff
 set expandtab
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 
 " scrolling
 set scrolloff=8
 
 " gui options
 set guioptions=ac
-set guifont=PragmataPro\ for\ Powerline\ 14
+set guifont=PragmataPro\ for\ Powerline\ 11
 
 " hide the mouse while typing
 set mousehide
