@@ -44,7 +44,7 @@ filetype plugin indent on
 
 " colorscheme
 set background=light
-colorscheme solarized
+colorscheme seoul256
 
 " virtualedit
 set virtualedit=all
@@ -109,14 +109,19 @@ map <F1> :NERDTreeToggle<CR>
 " ctags binding
 nnoremap <f12> :!ctags -R<cr>
 
-" xptemplate bindings
-" let g:xptemplate_key = '<Tab>'
-" let g:xptemplate_brace_complete = 1
-" let g:xptemplate_vars = "SParg="
-
 " status line configuration
 set ls=2 " always show status line
 
 " powerline settings
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set noshowmode
+
+noremap <C-f> :copen<CR>:Ack -aQi
+
+let g:syntastic_php_checkers=['php', 'phpmd']
+
+let g:pdv_template_dir = $HOME . "/.vim/bundle/pdv/templates"
+
+autocmd FileType php inoremap <C-c> <ESC>:call pdv#DocumentCurrentLine()<CR>i
+autocmd FileType php nnoremap <C-c> :call pdv#DocumentCurrentLine()<CR>
+autocmd FileType php vnoremap <C-p> :call pdv#DocumentCurrentLine()<CR>
