@@ -53,8 +53,8 @@ set backspace=2
 
 " tab stuff
 set expandtab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " fold method
 " set foldmethod=syntax
